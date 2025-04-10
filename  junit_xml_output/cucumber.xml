@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="33.209" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Attandance Verfifcation Login + Open Calender + Montly Calender + Refresh" name="AttandanceVerfifcation" time="16.992">
+<system-out><![CDATA[
+Given Open the HRMS Application.............................................passed
+And Login to the HRMS Application...........................................passed
+When Click on Calender bar..................................................passed
+And Click on Current Month Link Label.......................................passed
+And Click on Refresh........................................................passed
+Then Verify the Current Month Calender......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="HRMS Pending Approvals" name="VerifyPendingApproval" time="15.953">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id='ddlFormName']/child::option[@value !=''][1]&quot;}
+  (Session info: chrome=135.0.7049.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4dd0aed6ec32ca735d7f5ded2f2eff17, findElement {value=//select[@id='ddlFormName']/child::option[@value !=''][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Muralikrishna\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53399}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53399/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dd0aed6ec32ca735d7f5ded2f2eff17">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='ddlFormName']/child::option[@value !=''][1]"}
+  (Session info: chrome=135.0.7049.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4dd0aed6ec32ca735d7f5ded2f2eff17, findElement {value=//select[@id='ddlFormName']/child::option[@value !=''][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Muralikrishna\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53399}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53399/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dd0aed6ec32ca735d7f5ded2f2eff17
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at PageObject.SelfServicesApps.DropDownSelectforApproval(SelfServicesApps.java:36)
+	at StepDefinition.PendingApprovals.select_the_record_for_approval(PendingApprovals.java:28)
+	at ✽.Select the Record for Approval(file:///C:/Users/Muralikrishna/eclipse-workspace/HRMS_CUC-AID2/Features/PendingforApproval.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Login to the HRMS Application.........................................passed
+When Click on Self Service Button...........................................passed
+And Click on Forms Pending for Approval.....................................passed
+And Select the Record for Approval..........................................failed
+And Enter the Apporval Text as Approved.....................................skipped
+Then Verify Record is Approved..............................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
